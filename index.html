@@ -1,0 +1,408 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>invite to p5.js</title>
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="css/ress.min.css">
+	<!-- <link href="https://fonts.googleapis.com/css?family=Abel&display=swap" rel="stylesheet"> -->
+	<!-- jQueryを読み込む -->
+	<script src="./js/jquery-1.9.1.js"></script>
+	<!-- プラグインを読み込む -->
+	<script src="js/jquery-inertiaScroll.js"></script>
+	<!-- <script src="js/processing.js"></script> -->
+	<!--p5.js-->
+	<!-- <script src="js/p5.min.js"></script> -->
+	<!-- <script src="./js/sketch/index/sketch.js"></script> -->
+
+	<!-- <script src="js/processing.js"></script>
+	<canvas data-processing-sources="js/sketch/processingjs/sample1.pde"></canvas> -->
+
+	<script src="./js/jquery.shuffleLetters.js"></script>
+	<script src="./js/shuffle-text.js"></script>
+
+	<!-- 慣性スクロール1/2 -->
+	<!-- <script src="./js/jquery.easeScroll.js"></script> -->
+	<script>
+		$(function() {
+
+			$(window).on('load', function() {
+				$('.loading-cover').fadeOut();
+				$('.line').animate({
+					'height': '100%'
+				}, 1000, 'swing');
+			});
+
+			// about-----------------------------------------
+			$(".btn-about").on('click', function() {
+				$('.about').fadeIn();
+				$('.about').css('display', 'flex');
+			});
+
+			$(".back,.btn-about-white").on('click', function() {
+				$('.about').fadeOut();
+			});
+			// -----------------------------------------
+
+
+			// $('.scroll-down').shuffleLetters();
+			// $('.inner-left').shuffleLetters();
+
+			// テキストシャッフル
+			var innerleft = new ShuffleText(document.querySelector('.inner-left'));
+			innerleft.start();
+
+			var btnabout = new ShuffleText(document.querySelector('.btn-about'));
+			btnabout.start();
+
+			// 慣性スクロール2/2
+			// $("html").easeScroll({
+			// 	frameRate: 60,
+			// 	animationTime: 1000,
+			// 	stepSize: 120,
+			// 	pulseAlgorithm: 1,
+			// 	pulseScale: 8,
+			// 	pulseNormalize: 1,
+			// 	accelerationDelta: 20,
+			// 	accelerationMax: 1,
+			// 	keyboardSupport: true,
+			// 	arrowScroll: 50,
+			// 	touchpadSupport: true,
+			// 	fixedBackground: true
+			// });
+
+			// item001.html------------------------------------------------
+			$('.item1,.num1').on('click', function() {
+				$('.loading-cover').fadeIn();
+				setTimeout(function() {
+					window.location.href = 'item001.html';
+				}, 1000);
+
+				var num = $('.num1').offset().top;
+				$('html, body').animate({
+					'scrollTop': num - window.innerHeight / 2 + 38 / 2
+				});
+				// スクロール制御
+				$(function() {
+					if ($(".center").length) {
+						$("body").css('overflow', 'hidden');
+					} else {
+						$("body").css('overflow', 'auto');
+					}
+				});
+			});
+
+			// item002.html------------------------------------------------
+			$('.item2,.num2').on('click', function() {
+				$('.loading-cover').fadeIn();
+				setTimeout(function() {
+					window.location.href = 'item002.html';
+				}, 1000);
+
+				var num = $('.num2').offset().top;
+				$('html, body').animate({
+					'scrollTop': num - window.innerHeight / 2 + 38 / 2
+				});
+				// スクロール制御
+				$(function() {
+					if ($(".center").length) {
+						$("body").css('overflow', 'hidden');
+					} else {
+						$("body").css('overflow', 'auto');
+					}
+				});
+			});
+
+			// item003.html------------------------------------------------
+			$('.item3,.num3').on('click', function() {
+				$('.loading-cover').fadeIn();
+				setTimeout(function() {
+					window.location.href = 'item003.html';
+				}, 1000);
+
+				var num = $('.num3').offset().top;
+				$('html, body').animate({
+					'scrollTop': num - window.innerHeight / 2 + 38 / 2
+				});
+				// スクロール制御
+				$(function() {
+					if ($(".center").length) {
+						$("body").css('overflow', 'hidden');
+					} else {
+						$("body").css('overflow', 'auto');
+					}
+				});
+			});
+			// item004.html------------------------------------------------
+			$('.item4,.num4').on('click', function() {
+				$('.loading-cover').fadeIn();
+				setTimeout(function() {
+					window.location.href = 'item004.html';
+				}, 1000);
+
+				var num = $('.num4').offset().top;
+				$('html, body').animate({
+					'scrollTop': num - window.innerHeight / 2 + 38 / 2
+				});
+				// スクロール制御
+				$(function() {
+					if ($(".center").length) {
+						$("body").css('overflow', 'hidden');
+					} else {
+						$("body").css('overflow', 'auto');
+					}
+				});
+			});
+			// item005.html------------------------------------------------
+			$('.item5,.num5').on('click', function() {
+				$('.loading-cover').fadeIn();
+				setTimeout(function() {
+					window.location.href = 'item005.html';
+				}, 1000);
+
+				var num = $('.num5').offset().top;
+				$('html, body').animate({
+					'scrollTop': num - window.innerHeight / 2 + 38 / 2
+				});
+				// スクロール制御
+				$(function() {
+					if ($(".center").length) {
+						$("body").css('overflow', 'hidden');
+					} else {
+						$("body").css('overflow', 'auto');
+					}
+				});
+			});
+			// item006.html------------------------------------------------
+			$('.item6,.num6').on('click', function() {
+				$('.loading-cover').fadeIn();
+				setTimeout(function() {
+					window.location.href = 'item006.html';
+				}, 1000);
+
+				var num = $('.num6').offset().top;
+				$('html, body').animate({
+					'scrollTop': num - window.innerHeight / 2 + 38 / 2
+				});
+				// スクロール制御
+				$(function() {
+					if ($(".center").length) {
+						$("body").css('overflow', 'hidden');
+					} else {
+						$("body").css('overflow', 'auto');
+					}
+				});
+			});
+			// item007.html------------------------------------------------
+			$('.item7,.num7').on('click', function() {
+				$('.loading-cover').fadeIn();
+				setTimeout(function() {
+					window.location.href = 'item007.html';
+				}, 1000);
+
+				var num = $('.num7').offset().top;
+				$('html, body').animate({
+					'scrollTop': num - window.innerHeight / 2 + 38 / 2
+				});
+				// スクロール制御
+				$(function() {
+					if ($(".center").length) {
+						$("body").css('overflow', 'hidden');
+					} else {
+						$("body").css('overflow', 'auto');
+					}
+				});
+			});
+			// item008.html------------------------------------------------
+			$('.item8,.num8').on('click', function() {
+				$('.loading-cover').fadeIn();
+				setTimeout(function() {
+					window.location.href = 'item008.html';
+				}, 1000);
+
+				var num = $('.num8').offset().top;
+				$('html, body').animate({
+					'scrollTop': num - window.innerHeight / 2 + 38 / 2
+				});
+				// スクロール制御
+				$(function() {
+					if ($(".center").length) {
+						$("body").css('overflow', 'hidden');
+					} else {
+						$("body").css('overflow', 'auto');
+					}
+				});
+			});
+		});
+	</script>
+
+</head>
+
+<body>
+	<div class="loading-cover"></div>
+
+	<main id="main">
+		<div class="container">
+			<div class="left">
+				<div class="inner-left">
+					<p>invite</p>
+					<p>to</p>
+					<p>p5.js</p>
+				</div>
+			</div>
+			<div class="center">
+				<!--<div class="scroll-line"></div>-->
+				<p class="scroll-down">scroll down</p>
+				<div class="box-top">
+					<div class="scroll-line"></div>
+				</div>
+				<div class="scroll-margin"></div>
+				<div class="scroll-area"></div>
+				<div class="scroll-margin"></div>
+				<article>
+					<div class="box-line-top">
+						<div class="line">
+						</div>
+						<!-- <a href="#"> -->
+						<img class="thumbnail-right item1" src="./img/img001.png" alt="">
+						<!-- </a> -->
+					</div>
+					<div class="box-margin"></div>
+					<div class="number">
+						<p class="num1"><img src="./img/item001.png" alt=""></p>
+					</div>
+					<div class="box-margin"></div>
+				</article>
+				<article>
+					<div class="box-line">
+						<div class="line"></div>
+						<img class="thumbnail-left item2" src="./img/img002.png" alt="">
+					</div>
+					<div class="box-margin"></div>
+					<div class="number">
+						<p class="num2"><img src="./img/item002.png" alt=""></p>
+					</div>
+					<div class="box-margin"></div>
+				</article>
+				<article>
+					<div class="box-line">
+						<div class="line"></div>
+						<img class="thumbnail-right item3" src="./img/img003.png" alt="">
+					</div>
+					<div class="box-margin"></div>
+					<div class="number">
+						<p class="num3"><img src="./img/item003.png" alt=""></p>
+					</div>
+					<div class="box-margin"></div>
+				</article>
+				<article>
+					<div class="box-line">
+						<div class="line"></div>
+						<img class="thumbnail-left item4" src="./img/img004.png" alt="">
+					</div>
+					<div class="box-margin"></div>
+					<div class="number">
+						<p class="num4"><img src="./img/item004.png" alt=""></p>
+					</div>
+					<div class="box-margin"></div>
+				</article>
+				<article>
+					<div class="box-line">
+						<div class="line"></div>
+						<img class="thumbnail-right item5" src="./img/img005.png" alt="">
+					</div>
+					<div class="box-margin"></div>
+					<div class="number">
+						<p class="num5"><img src="./img/item005.png" alt=""></p>
+					</div>
+					<div class="box-margin"></div>
+				</article>
+				<article>
+					<div class="box-line">
+						<div class="line"></div>
+						<img class="thumbnail-left item6" src="./img/img006.png" alt="">
+					</div>
+					<div class="box-margin"></div>
+					<div class="number">
+						<p class="num6"><img src="./img/item006.png" alt=""></p>
+					</div>
+					<div class="box-margin"></div>
+				</article>
+				<article>
+					<div class="box-line">
+						<div class="line"></div>
+						<img class="thumbnail-right item7" src="./img/img007.png" alt="">
+					</div>
+					<div class="box-margin"></div>
+					<div class="number">
+						<p class="num7"><img src="./img/item007.png" alt=""></p>
+					</div>
+					<div class="box-margin"></div>
+				</article>
+				<article>
+					<div class="box-line">
+						<div class="line"></div>
+						<img class="thumbnail-left item8" src="./img/img008.png" alt="">
+					</div>
+					<div class="box-margin"></div>
+					<div class="number">
+						<p class="num8"><img src="./img/item008.png" alt=""></p>
+					</div>
+					<div class="box-margin"></div>
+				</article>
+				<article>
+					<div class="box-line">
+						<div class="line"></div>
+					</div>
+					<div class="box-margin"></div>
+					<div class="number">
+						<!-- <p><a href="https://www.openprocessing.org/" target="_blank">more</a></p> -->
+						<p>end</p>
+					</div>
+					<div class="box-margin"></div>
+				</article>
+				<div class="box-margin"></div>
+
+				<div class="right">
+					<div class="inner-right">
+						<p class="btn-about">about</p>
+					</div>
+				</div>
+
+				<section class="about">
+					<div class="about-left">
+						<div class="about-left-inner-left">
+							<p class="back">&lt;-back</p>
+						</div>
+						<div class="about-left-inner-center">
+							<h2>invite to p5.js</h2>
+							<div class="under-line"></div>
+
+							<p>p5.jsの動きの紹介を目的としたサイトです。</p>
+							<p class="mbt60 pdt30">コンテンツにはopenProcessing、<br>
+								Generative Design with p5.jsのサンプルコードを<br>
+								使用しています。</p>
+							<div class="sample-img">
+								<img class="pdr60 imgs120" src="./img/openprocessing-logo.png" alt="">
+								<img class="imgs150"src="./img/book.jpg" alt="">
+							</div>
+						</div>
+						<div class="about-left-inner-right"></div>
+
+					</div>
+					<div class="about-right">
+						<div class="right">
+							<div class="inner-right">
+								<p class="btn-about-white">about</p>
+							</div>
+						</div>
+					</div>
+				</section>
+
+
+			</div>
+	</main>
+</body>
+
+</html>

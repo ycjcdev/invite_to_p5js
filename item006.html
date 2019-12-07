@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+
+<head>
+	<!-- <link href="https://fonts.googleapis.com/css?family=Abel&display=swap" rel="stylesheet"> -->
+
+	<meta charset="utf-8">
+	<title>invite to p5.js</title>
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="css/ress.min.css">
+	<!-- jQueryを読み込む -->
+	<script src="js/jquery-1.9.1.js"></script>
+	<!-- プラグインを読み込む -->
+	<script src="js/jquery-inertiaScroll.js"></script>
+	<!--p5.js-->
+	<script src="js/p5.min.js"></script>
+	<script src="./js/sketch/006/sketch.js"></script>
+
+	<!-- <script src="./js/jquery.shuffleLetters.js"></script>
+	<script src="./js/shuffle-text.js"></script> -->
+	<script>
+		$(function() {
+			$(window).on('load', function() {
+				$('canvas').animate({
+					'opacity': '1'
+				})
+				// if ($(".center").length) {
+				// 	$("body").css('overflow', 'hidden');
+				// } else {
+				// 	$("body").css('overflow', 'auto');
+				// }
+			});
+
+			$('.inner-left').on('click',function(){
+				history.back();
+			});
+
+			// about-----------------------------------------
+			$(".btn-about").on('click', function() {
+				$('.about').fadeIn();
+				$('.about').css('display', 'flex');
+			});
+
+			$(".back,.btn-about-white").on('click', function() {
+				$('.about').fadeOut();
+			});
+			// -----------------------------------------
+		});
+	</script>
+
+</head>
+
+<body id="item">
+
+	<main>
+		<div class="container">
+			<div class="left">
+					<div class="inner-left">
+						<p>invite</p>
+						<p>&lt;-</p>
+						<p>p5.js</p>
+					</div>
+			</div>
+			<div class="center">
+
+				<div class="number">
+					<p><img src="./img/item006.png" alt=""></p>
+				</div>
+			</div>
+			<div class="right">
+				<div class="inner-right">
+					<p class="btn-about"><img src="./img/about.png" alt=""></p>
+				</div>
+			</div>
+
+			<section class="about">
+				<div class="about-left">
+					<div class="about-left-inner-left">
+						<p class="back">&lt;-back</p>
+					</div>
+					<div class="about-left-inner-center">
+						<h2>invite to p5.js</h2>
+						<div class="under-line"></div>
+
+						<p>p5.jsの動きの紹介を目的としたサイトです。</p>
+						<p class="mbt60 pdt30">コンテンツにはopenProcessing、<br>
+							Generative Design with p5.jsのサンプルコードを<br>使用しています。</p>
+						<div class="sample-img">
+							<img class="pdr60 imgs120" src="./img/openprocessing-logo.png" alt="">
+							<img class="imgs150"src="./img/book.jpg" alt="">
+						</div>
+					</div>
+					<div class="about-left-inner-right"></div>
+
+				</div>
+				<div class="about-right">
+					<div class="right">
+						<div class="inner-right">
+							<p class="btn-about-white">about</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+		</div>
+	</main>
+</body>
+
+</html>
