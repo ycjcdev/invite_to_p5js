@@ -19,6 +19,12 @@
 				}, 1000, 'swing');
 			});
 
+			// test
+			setTimeout(function() {
+				var scrollVal = localStorage.getItem('scroll')
+				$(window).scrollTop(scrollVal);
+			}, 50);
+
 			// about-----------------------------------------
 			$(".btn-about").on('click', function() {
 				$('.about').fadeIn();
@@ -45,9 +51,13 @@
 				}, 1000);
 
 				var num = $('.num1').offset().top;
+				var scrollVal = num - window.innerHeight / 2 + 38 / 2
 				$('html, body').animate({
-					'scrollTop': num - window.innerHeight / 2 + 38 / 2
+					'scrollTop': scrollVal
 				});
+
+				localStorage.setItem('scroll',scrollVal);
+
 				// スクロール制御
 				$(function() {
 					if ($(".center").length) {
@@ -66,9 +76,13 @@
 				}, 1000);
 
 				var num = $('.num2').offset().top;
+				var scrollVal = num - window.innerHeight / 2 + 38 / 2
 				$('html, body').animate({
-					'scrollTop': num - window.innerHeight / 2 + 38 / 2
+					'scrollTop': scrollVal
 				});
+
+				localStorage.setItem('scroll',scrollVal);
+
 				// スクロール制御
 				$(function() {
 					if ($(".center").length) {
@@ -87,9 +101,13 @@
 				}, 1000);
 
 				var num = $('.num3').offset().top;
+				var scrollVal = num - window.innerHeight / 2 + 38 / 2
 				$('html, body').animate({
-					'scrollTop': num - window.innerHeight / 2 + 38 / 2
+					'scrollTop': scrollVal
 				});
+
+				localStorage.setItem('scroll',scrollVal);
+
 				// スクロール制御
 				$(function() {
 					if ($(".center").length) {
@@ -107,9 +125,13 @@
 				}, 1000);
 
 				var num = $('.num4').offset().top;
+				var scrollVal = num - window.innerHeight / 2 + 38 / 2
 				$('html, body').animate({
-					'scrollTop': num - window.innerHeight / 2 + 38 / 2
+					'scrollTop': scrollVal
 				});
+
+				localStorage.setItem('scroll',scrollVal);
+
 				// スクロール制御
 				$(function() {
 					if ($(".center").length) {
@@ -127,9 +149,13 @@
 				}, 1000);
 
 				var num = $('.num5').offset().top;
+				var scrollVal = num - window.innerHeight / 2 + 38 / 2
 				$('html, body').animate({
-					'scrollTop': num - window.innerHeight / 2 + 38 / 2
+					'scrollTop': scrollVal
 				});
+
+				localStorage.setItem('scroll',scrollVal);
+
 				// スクロール制御
 				$(function() {
 					if ($(".center").length) {
@@ -147,9 +173,13 @@
 				}, 1000);
 
 				var num = $('.num6').offset().top;
+				var scrollVal = num - window.innerHeight / 2 + 38 / 2
 				$('html, body').animate({
-					'scrollTop': num - window.innerHeight / 2 + 38 / 2
+					'scrollTop': scrollVal
 				});
+
+				localStorage.setItem('scroll',scrollVal);
+
 				// スクロール制御
 				$(function() {
 					if ($(".center").length) {
@@ -167,9 +197,13 @@
 				}, 1000);
 
 				var num = $('.num7').offset().top;
+				var scrollVal = num - window.innerHeight / 2 + 38 / 2
 				$('html, body').animate({
-					'scrollTop': num - window.innerHeight / 2 + 38 / 2
+					'scrollTop': scrollVal
 				});
+
+				localStorage.setItem('scroll',scrollVal);
+
 				// スクロール制御
 				$(function() {
 					if ($(".center").length) {
@@ -187,9 +221,13 @@
 				}, 1000);
 
 				var num = $('.num8').offset().top;
+				var scrollVal = num - window.innerHeight / 2 + 38 / 2
 				$('html, body').animate({
-					'scrollTop': num - window.innerHeight / 2 + 38 / 2
+					'scrollTop': scrollVal
 				});
+
+				localStorage.setItem('scroll',scrollVal);
+
 				// スクロール制御
 				$(function() {
 					if ($(".center").length) {
@@ -346,7 +384,7 @@
 								使用しています。</p>
 							<div class="sample-img">
 								<img class="pdr60 imgs120" src="./img/openprocessing-logo.png" alt="">
-								<img class="imgs150"src="./img/book.jpg" alt="">
+								<img class="imgs150" src="./img/book.jpg" alt="">
 							</div>
 						</div>
 						<div class="about-left-inner-right"></div>
@@ -364,6 +402,7 @@
 
 			</div>
 	</main>
+
 </body>
 
 </html>
