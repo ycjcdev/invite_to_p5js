@@ -385,3 +385,9 @@ div {
 #item .number{
 	cursor: default;
 }
+
+.inner-left{
+   width: 63px;
+   height: 114px;
+   overflow: hidden;
+}
