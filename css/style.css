@@ -392,7 +392,7 @@ div {
    overflow: hidden;
 }
 
-.number img
-{
+.number img{
    width: 47px;
+   padding-bottom: 7px;
 }
