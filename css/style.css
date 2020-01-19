@@ -391,3 +391,8 @@ div {
    height: 114px;
    overflow: hidden;
 }
+
+.number img
+{
+   width: 47px;
+}
